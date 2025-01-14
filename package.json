@@ -1,0 +1,45 @@
+{
+  "name": "vc-dock",
+  "type": "module",
+  "version": "0.0.2",
+  "description": "Dock Layout for Vue3 Component",
+  "author": "Allen Huang <xiaofuyesnew@hotmail.com>",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "dist/index.mjs",
+  "module": "dist/index.mjs",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "postinstall": "npx simple-git-hooks",
+    "dev": "vite",
+    "build": "vite build",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.20"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.1.1",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "eslint": "^9.19.0",
+    "lint-staged": "^15.4.3",
+    "simple-git-hooks": "^2.11.1",
+    "vite": "^6.1.0",
+    "vitepress": "^1.6.3",
+    "vue": "^3.5.21"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --cache --fix"
+  }
+}
