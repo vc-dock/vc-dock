@@ -1,0 +1,27 @@
+{
+  "name": "@vc-dock/core",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "Dock Layout for Vue 3 Component",
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.js"
+    },
+    "./src/*": "./src/*"
+  },
+  "main": "dist/index.umd.js",
+  "module": "dist/index.esm.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "vue": "^3.5.13"
+  }
+}

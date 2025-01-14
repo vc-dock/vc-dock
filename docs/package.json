@@ -1,0 +1,17 @@
+{
+  "name": "@vc-dock/docs",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "dependencies": {
+    "@vc-dock/core": "workspace:*"
+  },
+  "devDependencies": {
+    "vitepress": "^1.5.0"
+  }
+}

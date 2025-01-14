@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "baseUrl": "./",
+    "moduleResolution": "Node",
+    "paths": {
+      "@core/*": ["/packages/core/src/*"],
+      "~core/*": ["/packages/core/*"],
+      "@play/*": ["/playground/src/*"],
+      "~play/*": ["/playground/*"],
+      "@vc-dock/core": ["/packages/core/src/index"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
